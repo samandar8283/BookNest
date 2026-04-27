@@ -4,7 +4,6 @@ import { doc, getDoc, updateDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../../firebase/config";
 import { useAlert } from "../../contexts/AlertContext";
 import OrderStatusTimeline from "./OrderStatusTimeline";
-import placeholderImage from "/images/placeholder-book-image.svg";
 
 const statusColor = (status) => {
     switch (status) {
@@ -134,7 +133,7 @@ const OrderDetails = () => {
                                         style={{ width: 60, height: 80, objectFit: "cover", objectPosition: "top" }}
                                         className="rounded me-3"
                                         onError={(e) => {
-                                            e.currentTarget.src = placeholderImage;
+                                            e.currentTarget.src = "/images/placeholder-book-image.svg";
                                         }}
                                     />
 

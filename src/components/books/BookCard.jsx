@@ -3,7 +3,6 @@ import { useCart } from "../../contexts/CartContext";
 import { useFavorite } from "../../contexts/FavoriteContext";
 import { useAlert } from "../../contexts/AlertContext";
 import { BsHeart, BsHeartFill } from "react-icons/bs";
-import placeholderImage from "/images/placeholder-book-image.svg";
 
 function BookCard({ book, id, title, author, price, coverImageUrl, isPlaceholder }) {
     const navigate = useNavigate();
@@ -33,7 +32,7 @@ function BookCard({ book, id, title, author, price, coverImageUrl, isPlaceholder
                 className="card-img-top rounded-2"
                 alt={title}
                 onError={(e) => {
-                    e.currentTarget.src = placeholderImage;
+                    e.currentTarget.src = "/images/placeholder-book-image.svg";
                 }}
             />
 

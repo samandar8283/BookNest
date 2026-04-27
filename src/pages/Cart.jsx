@@ -7,7 +7,6 @@ import { useAlert } from "../contexts/AlertContext";
 import AuthModal from "../components/auth/AuthModal";
 import { useFavorite } from "../contexts/FavoriteContext";
 import { BsTrash, BsHeart, BsDash, BsPlus, BsXLg } from "react-icons/bs";
-import placeholderImage from "/images/placeholder-book-image.svg";
 
 function CartPage() {
     const { cart, removeFromCart, clearCart, updateQty, totalQty, totalPrice, loading } = useCart();
@@ -82,7 +81,7 @@ function CartPage() {
                                                 src={book.coverImageUrl}
                                                 alt={book.title}
                                                 onError={(e) => {
-                                                    e.currentTarget.src = placeholderImage;
+                                                    e.currentTarget.src = "/images/placeholder-book-image.svg";
                                                 }}
                                                 className="img-fluid rounded"
                                             />

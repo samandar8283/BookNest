@@ -6,7 +6,6 @@ import { useCart } from "../contexts/CartContext";
 import { useAlert } from "../contexts/AlertContext";
 import { useFavorite } from "../contexts/FavoriteContext";
 import { BsHeart, BsHeartFill, BsBag } from "react-icons/bs";
-import placeholderImage from "/images/placeholder-book-image.svg";
 
 function BookDetail() {
     const { bookId } = useParams();
@@ -63,7 +62,7 @@ function BookDetail() {
                             alt={book.title}
                             className="img-fluid rounded"
                             onError={(e) => {
-                                e.currentTarget.src = placeholderImage;
+                                e.currentTarget.src = "/images/placeholder-book-image.svg";
                             }}
                         />
                         <div className="favorite-card-button position-absolute">

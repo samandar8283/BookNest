@@ -1,0 +1,706 @@
+/* literata-regular - latin_cyrillic */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Inter-Light"),
+        url("./../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("ttf"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("./../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("ttf");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* literata-500 - latin_cyrillic */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src:
+        local("Inter-Medium"),
+        url("./../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("ttf"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("./../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("ttf");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* literata-600 - latin_cyrillic */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    src:
+        local("Inter-SemiBold"),
+        url("./../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("ttf"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("./../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("ttf");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* literata-700 - latin_cyrillic */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src:
+        local("Inter-Bold"),
+        url("./../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("ttf"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("./../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("ttf");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* literata-800 - latin_cyrillic */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    src:
+        local("Inter-ExtraBold"),
+        url("../assets/fonts/aBold.ttf") format("ttf"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../assets/fonts/aBold.ttf") format("ttf");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.cursor-pointer-custom {
+    cursor: pointer;
+}
+
+.cursor-auto-custom {
+    cursor: auto !important;
+}
+
+/* custom transition styles */
+.smooth-transition {
+    transition: all 0.2s ease-in-out;
+}
+
+/* custom text styles */
+.text-hoverable-custom:hover {
+    color: rgb(13, 110, 253);
+}
+
+.text-dark-custom {
+    color: #212529;
+}
+
+.text-blue-custom,
+a.active {
+    color: rgb(16, 127, 228) !important;
+}
+
+.text-dark-blue-custom {
+    color: rgb(0, 91, 174);
+}
+
+.text-orange-custom {
+    color: rgb(239, 127, 26);
+}
+
+/* custom background-color styles */
+.bg-light-blue-custom {
+    background-color: rgba(16, 127, 228, 0.1);
+}
+
+.bg-light-gray-custom {
+    background-color: rgb(240, 240, 240);
+}
+
+.bg-light-red-custom {
+    background-color: rgba(214, 88, 17, 0.1);
+}
+
+.bg-orange-hover-custom:hover {
+    background-color: rgba(239, 125, 26, 0.9);
+}
+
+.bg-orange-custom,
+.bg-orange-custom.active {
+    background-color: rgba(239, 127, 26, 0.9) !important;
+    border-color: rgba(239, 127, 26, 0.9) !important;
+    color: white !important;
+}
+
+.bg-orange-custom:hover,
+.bg-orange-custom.active:hover,
+.bg-orange-custom:first-child:focus,
+.bg-orange-custom:first-child:active,
+.bg-orange-custom:first-child:focus-visible {
+    background-color: rgb(219, 109, 13) !important;
+    border-color: rgb(219, 109, 13) !important;
+}
+
+/* custom border styles */
+.border-orange-custom,
+.border-orange-custom:hover,
+.border-orange-custom:active,
+.border-orange-custom:focus-visible,
+.border-orange-custom:focus {
+    border: 1px solid #ef7f1a;
+}
+
+.fs-custom-14 {
+    font-size: 14px;
+}
+
+/* ::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #767676;
+} */
+
+
+/* Navbar styles */
+.bg-body-tertiary {
+    background-color: white !important;
+}
+
+.logo {
+    width: 64px;
+}
+
+.navbar-section .form-control {
+    width: 380px;
+    letter-spacing: 0.5px;
+}
+
+.dropdown-menu {
+    min-width: 0;
+}
+
+.dropdown-item.active {
+    background-color: rgba(128, 128, 128, 0.200);
+    color: #212529;
+}
+
+.dropdown-item:active,
+.dropdown-item:hover {
+    background-color: rgba(128, 128, 128, 0.200);
+    color: #212529;
+}
+
+.form-check-input:hover {
+    border: 0.8px solid rgb(134, 183, 254);
+}
+
+.social-media-link a {
+    font-size: 28px;
+    padding: 0;
+    color: #1345e6;
+}
+
+.social-media-link a:hover {
+    background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* /Navbar styles */
+
+/* Links styles */
+.links-action:hover {
+    background-color: rgb(222, 222, 222);
+}
+
+.links-action-parent.active .links-action {
+    background-color: rgb(210, 210, 210) !important;
+}
+
+.stat-number {
+    top: -10px;
+    left: 88%;
+    min-width: 24px;
+}
+
+/* /Link styles */
+
+/* Main-section styles */
+.scroll-custom {
+    height: 490px;
+    background-color: rgb(246, 246, 246);
+    /* border-radius: 20px; */
+}
+
+.categoryItem:hover,
+.categoryItem:hover .categoryAction {
+    background-color: rgb(239, 127, 26);
+    color: white;
+
+}
+
+#mainCarousel .carousel-btn-custom {
+    width: clamp(40px, 3vw, 40px);
+    height: clamp(40px, 3vw, 40px);
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.main-carousel-control-prev {
+    left: clamp(8px, 2vw, 20px);
+    top: 50%;
+    padding-right: 2px;
+    transform: translateY(-50%);
+}
+
+.main-carousel-control-next {
+    right: clamp(8px, 2vw, 20px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#mainCarousel .carousel-btn-custom:hover {
+    background-color: #000;
+    opacity: 1;
+}
+
+#mainCarousel {
+    aspect-ratio: 16 / 8;
+}
+
+#mainCarousel .carousel-inner,
+#mainCarousel .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+#mainCarousel .carousel-image-wrapper {
+    height: 100%;
+}
+
+#mainCarousel .carousel-image-wrapper img {
+    /* aspect-ratio: 16 / 8; */
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+
+/* /Main-section styles */
+
+/* Advantages styles */
+.advantage-card {
+    max-width: 360px;
+}
+
+.advantage-card img {
+    width: 48px;
+    height: 48px;
+}
+
+/* /Advantages styles */
+
+/* Yangi-asr-avlodi styles */
+.yangi-asr-avlodi-title {
+    color: white;
+    background-color: rgb(239, 127, 26);
+    display: inline-block;
+}
+
+.books-card {
+    width: 19%;
+}
+
+.shopping-card-button {
+    background-color: rgb(0, 191, 175, 0.7);
+    width: 40px;
+    height: 40px;
+}
+
+.shopping-card-button:hover {
+    background-color: rgb(0, 191, 175);
+}
+
+.favorite-card-button {
+    top: 20px;
+    right: 20px;
+}
+
+.favorite-card-button button {
+    width: 38px;
+    height: 38px;
+}
+
+.favorite-card-button button:hover {
+    background-color: rgb(239, 127, 26) !important;
+    color: white;
+}
+
+/* /Yangi-asr-avlodi styles */
+
+/* Bestseller styles */
+.bestseller-indicator-button {
+    width: 24px !important;
+    height: 24px !important;
+    position: relative;
+}
+
+.bestseller-indicator-button span {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(240, 240, 240);
+    top: 8px;
+    left: 8px;
+}
+
+.secondary-carousel {
+    aspect-ratio: 16 / 6;
+}
+
+.secondary-carousel .carousel-inner,
+.secondary-carousel .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.secondary-carousel-img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* /Bestseller styles */
+
+/* New releases styles */
+.new-releases-title {
+    color: white;
+    background-color: rgb(239, 127, 26);
+    display: inline-block;
+}
+
+.new-releases .swiper-button-prev,
+.new-releases .swiper-button-next {
+    width: clamp(36px, 3vw, 40px);
+    height: clamp(36px, 3vw, 40px);
+    color: #000;
+    background-color: rgb(200, 200, 200);
+    padding-top: clamp(10px, 1vw, 12px);
+    padding-bottom: clamp(10px, 1vw, 12px);
+    border-radius: 50%;
+    top: -38px;
+}
+
+.new-releases .swiper-button-prev {
+    left: clamp(0%, 90%, calc(100% - 100px)) !important;
+    padding-right: 2px;
+}
+
+.new-releases .swiper-button-next {
+    right: clamp(12px, 2vw, 20px) !important;
+    padding-left: 2px;
+}
+
+/* Apps section styles */
+.apps {
+    margin: 120px 0 100px 0;
+}
+
+.apps .card-title {
+    font-size: clamp(24px, 2vw, 32px);
+}
+
+.apps-wrapper {
+    background-color: rgb(239, 127, 26);
+    padding-top: clamp(24px, 4vw, 72px);
+    padding-bottom: clamp(24px, 4vw, 72px);
+    padding-left: clamp(16px, 2vw, 36px);
+    padding-right: clamp(16px, 2vw, 36px);
+}
+
+.apps-card {
+    background-color: transparent;
+
+}
+
+.apps-link {
+    padding: clamp(12px, 1.5vw, 24px);
+}
+
+.apps-link img {
+    /* width: clamp(140px, 70%, 200px); */
+    width: 100%;
+    height: 100%;
+    max-width: 220px;
+}
+
+.apps-ios img {
+    transform: scale(0.9);
+}
+
+.phone-image {
+    background-image: url("./../media/images/app-phone-img.png");
+    width: clamp(200px, 85%, 400px);
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: -40%;
+    transform: translateX(33%);
+    left: clamp(-80px, -25%, -50px);
+}
+
+.phone-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* /Apps section styles */
+
+/* Book Message section styles */
+.book-warning-image {
+    width: 72px;
+    height: 72px;
+    padding: 12px;
+}
+
+/* News section styles */
+.news-card .card-body {
+    bottom: 0%;
+    left: 15px;
+}
+
+/* Footer section styles */
+.footer-logo img {
+    width: 60%;
+}
+
+/* Add Book styles */
+.add-book-form .form-control {
+    min-width: 100%;
+}
+
+/* Alert styles */
+.alert-wrapper {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+    z-index: 1060;
+}
+
+.alert {
+    min-width: 300px;
+}
+
+/* BookDetail styles */
+.book-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.book-info-list li {
+    display: flex;
+    justify-content: space-between;
+    /* left va right tomonini ajratadi */
+    align-items: center;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+/* chiziq o'ng tomon oldida */
+.book-info-list li span:nth-child(2) {
+    content: "";
+    border-bottom: dashed 1px;
+    flex-grow: 1;
+    height: 24px;
+}
+
+.book-info-img-wrapper {
+    width: 80%;
+    aspect-ratio: 9 / 12;
+    margin: auto;
+    object-fit: cover;
+}
+
+.book-info-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #ef7f1a;
+    color: white;
+    border-color: #ef7f1a !important;
+}
+
+.tab-pane {
+    background-color: rgb(246, 246, 246);
+    white-space: pre-line;
+}
+
+/* BookCard styles */
+.book-card img,
+.favorite-card img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Books styles */
+
+.btn-custom-hover:hover {
+    background-color: rgb(222, 222, 222);
+}
+
+/* BookCardSkeleton styles */
+.books-loading-text {
+    top: -25px;
+}
+
+.skeleton-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.skeleton-image {
+    aspect-ratio: 3 / 4;
+    border-radius: 4px;
+    background: linear-gradient(90deg,
+            #eee 25%,
+            #f5f5f5 37%,
+            #eee 63%);
+    background-size: 400% 100%;
+    animation: shimmer 1.4s infinite;
+}
+
+.skeleton-line {
+    height: 24px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background: linear-gradient(90deg,
+            #eee 25%,
+            #f5f5f5 37%,
+            #eee 63%);
+    background-size: 400% 100%;
+    animation: shimmer 1.4s infinite;
+}
+
+.skeleton-line.title {
+    width: 80%;
+}
+
+.skeleton-line.author {
+    width: 60%;
+}
+
+.skeleton-line.price {
+    width: 40%;
+}
+
+/* Cart styles */
+.cart-card img {
+    aspect-ratio: 3 / 4;
+    object-position: top;
+}
+
+.cart-remove-button {
+    top: 10px;
+    right: 5px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+/* Profile styles */
+.profile-buttons {
+    border-left: 0px;
+}
+.profile-buttons button.btn:active,
+.profile-buttons button.btn:hover,
+.profile-buttons a.btn:active,
+.profile-buttons a.btn:hover {
+    color: rgb(239, 127, 26);
+    border: 0;
+}
+
+/* Checkout styles */
+.no-validation {
+  border-color: #dee2e6 !important;
+  background-image: none !important;
+}
+
+/* Orders styles */
+.order-id {
+    max-width: 60%;
+}
+
+/* Responsive styles */
+@media (max-width: 1400px) {
+    .container {
+        min-width: 94%;
+    }
+
+    .footer-logo img {
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .phone-image {
+        bottom: -55%;
+    }
+}
+
+@media (max-width: 992px) {
+    .phone-image {
+        bottom: -62%;
+    }
+
+    .profile-buttons {
+        border-left: 1px solid rgb(196, 200, 203);
+    }
+}
+
+@media (max-width: 767px) {
+    .secondary-carousel {
+        aspect-ratio: 16 / 9;
+    }
+
+    .apps {
+        margin: 80px 0 50px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #mainCarousel {
+        aspect-ratio: 16 / 10;
+    }
+
+    .apps-ios {
+        transform: scale(1.1);
+    }
+
+    .secondary-carousel {
+        aspect-ratio: 16 / 10;
+    }
+
+    .profile-buttons {
+        border-left: 0px;
+    }
+}

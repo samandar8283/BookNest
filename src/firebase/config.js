@@ -3,7 +3,7 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
     
 const firebaseConfig = {
-    apiKey: "AIzaSyAAguqb5nPh4vuBL9DpFCHp0po-W6RqhZY",
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
     authDomain: "booknest-jas.firebaseapp.com",
     projectId: "booknest-jas",
     storageBucket: "booknest-jas.firebasestorage.app",

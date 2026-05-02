@@ -1,4 +1,23 @@
+import { useEffect } from "react";
+
 function SecondaryCarousel() {
+
+    useEffect(() => {
+        const bootstrap = window.bootstrap;
+
+        if (bootstrap) {
+            const element = document.querySelector("#secondaryCarousel");
+
+            if (element) {
+                new bootstrap.Carousel(element, {
+                    interval: 6000,
+                    ride: "carousel",
+                    pause: false,
+                    wrap: true
+                });
+            }
+        }
+    }, []);
     return (
         <div className="row mt-3 mt-md-5">
             <div className="col-12">
